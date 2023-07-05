@@ -151,8 +151,8 @@ public class Gacha : MonoBehaviour
         money_main.SetText(money_Gacha.ToString());
 
         result.SetText(GachaResult[0]+ "\n" +GachaResult[1]+ "\n" +GachaResult[2]+ "\n" +GachaResult[3]+ "\n" +GachaResult[4]+ "\n" +GachaResult[5]+ "\n" +GachaResult[6]+ "\n" +GachaResult[7]+ "\n" +GachaResult[8]+ "\n" +GachaResult[9]);
-        
-        for(int i = 0; i < 10; i++)
+
+        for(int i=0; i<10; i++) 
         {
             NCMBObject SendClass = new NCMBObject("SendClass");
             SendClass["message"] = GachaResult[i];
